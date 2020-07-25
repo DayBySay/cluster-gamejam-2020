@@ -9576,6 +9576,9 @@ GameObject:
   - component: {fileID: 2691593526394483273}
   - component: {fileID: 2691593526394483286}
   - component: {fileID: -309711091941630605}
+  - component: {fileID: 7322659047695254270}
+  - component: {fileID: 6168481783479210704}
+  - component: {fileID: 3705403281902024611}
   m_Layer: 0
   m_Name: Hanabi1
   m_TagString: Untagged
@@ -9610,7 +9613,7 @@ ParticleSystem:
   serializedVersion: 6
   lengthInSec: 5
   simulationSpeed: 1
-  stopAction: 2
+  stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -13385,12 +13388,12 @@ ParticleSystem:
     - serializedVersion: 3
       emitter: {fileID: 2691593526206858258}
       type: 2
-      properties: 0
+      properties: 16
       emitProbability: 1
     - serializedVersion: 3
       emitter: {fileID: 2691593525674965929}
       type: 0
-      properties: 0
+      properties: 16
       emitProbability: 1
     - serializedVersion: 3
       emitter: {fileID: 2691593527226944478}
@@ -14404,6 +14407,70 @@ MonoBehaviour:
   id:
     value: 0
   itemName: Hanabi1
+--- !u!114 &7322659047695254270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691593526394483287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a9785e42671427a8761e148889f041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: -309711091941630605}
+  key:
+    target: 0
+    key: start
+  delayTimeSeconds: 12
+  triggers:
+  - target: 0
+    specifiedTargetItem: {fileID: 0}
+    key: destroy
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
+--- !u!114 &6168481783479210704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691593526394483287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396768c05fa51bd47ab528ca7d76a531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: -309711091941630605}
+  key:
+    target: 0
+    key: destroy
+--- !u!114 &3705403281902024611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691593526394483287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90a8458122ef47c3b840e286a75994a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: -309711091941630605}
+  triggers:
+  - target: 0
+    specifiedTargetItem: {fileID: 0}
+    key: start
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
 --- !u!1 &2691593527226944479
 GameObject:
   m_ObjectHideFlags: 0
